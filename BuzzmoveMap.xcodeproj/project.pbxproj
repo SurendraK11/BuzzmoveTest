@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27E254C61F06F2A100003CF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E254C51F06F2A100003CF9 /* AppDelegate.swift */; };
+		27E254C81F06F2A100003CF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E254C71F06F2A100003CF9 /* ViewController.swift */; };
+		27E254CB1F06F2A100003CF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E254C91F06F2A100003CF9 /* Main.storyboard */; };
+		27E254CE1F06F2A100003CF9 /* BuzzmoveMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27E254CC1F06F2A100003CF9 /* BuzzmoveMap.xcdatamodeld */; };
+		27E254D01F06F2A100003CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27E254CF1F06F2A100003CF9 /* Assets.xcassets */; };
+		27E254D31F06F2A100003CF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E254D11F06F2A100003CF9 /* LaunchScreen.storyboard */; };
+		27E254DE1F06F2A100003CF9 /* BuzzmoveMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E254DD1F06F2A100003CF9 /* BuzzmoveMapTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27E254DA1F06F2A100003CF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27E254BA1F06F2A100003CF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27E254C11F06F2A100003CF9;
+			remoteInfo = BuzzmoveMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27E254C21F06F2A100003CF9 /* BuzzmoveMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzmoveMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27E254C51F06F2A100003CF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27E254C71F06F2A100003CF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27E254CA1F06F2A100003CF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27E254CD1F06F2A100003CF9 /* BuzzmoveMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BuzzmoveMap.xcdatamodel; sourceTree = "<group>"; };
+		27E254CF1F06F2A100003CF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27E254D21F06F2A100003CF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27E254D41F06F2A100003CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27E254D91F06F2A100003CF9 /* BuzzmoveMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuzzmoveMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27E254DD1F06F2A100003CF9 /* BuzzmoveMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzmoveMapTests.swift; sourceTree = "<group>"; };
+		27E254DF1F06F2A100003CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27E254BF1F06F2A100003CF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E254D61F06F2A100003CF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27E254B91F06F2A100003CF9 = {
+			isa = PBXGroup;
+			children = (
+				27E254C41F06F2A100003CF9 /* BuzzmoveMap */,
+				27E254DC1F06F2A100003CF9 /* BuzzmoveMapTests */,
+				27E254C31F06F2A100003CF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27E254C31F06F2A100003CF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27E254C21F06F2A100003CF9 /* BuzzmoveMap.app */,
+				27E254D91F06F2A100003CF9 /* BuzzmoveMapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27E254C41F06F2A100003CF9 /* BuzzmoveMap */ = {
+			isa = PBXGroup;
+			children = (
+				27E254C51F06F2A100003CF9 /* AppDelegate.swift */,
+				27E254C71F06F2A100003CF9 /* ViewController.swift */,
+				27E254C91F06F2A100003CF9 /* Main.storyboard */,
+				27E254CF1F06F2A100003CF9 /* Assets.xcassets */,
+				27E254D11F06F2A100003CF9 /* LaunchScreen.storyboard */,
+				27E254D41F06F2A100003CF9 /* Info.plist */,
+				27E254CC1F06F2A100003CF9 /* BuzzmoveMap.xcdatamodeld */,
+			);
+			path = BuzzmoveMap;
+			sourceTree = "<group>";
+		};
+		27E254DC1F06F2A100003CF9 /* BuzzmoveMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				27E254DD1F06F2A100003CF9 /* BuzzmoveMapTests.swift */,
+				27E254DF1F06F2A100003CF9 /* Info.plist */,
+			);
+			path = BuzzmoveMapTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27E254C11F06F2A100003CF9 /* BuzzmoveMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27E254E21F06F2A100003CF9 /* Build configuration list for PBXNativeTarget "BuzzmoveMap" */;
+			buildPhases = (
+				27E254BE1F06F2A100003CF9 /* Sources */,
+				27E254BF1F06F2A100003CF9 /* Frameworks */,
+				27E254C01F06F2A100003CF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BuzzmoveMap;
+			productName = BuzzmoveMap;
+			productReference = 27E254C21F06F2A100003CF9 /* BuzzmoveMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27E254D81F06F2A100003CF9 /* BuzzmoveMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27E254E51F06F2A100003CF9 /* Build configuration list for PBXNativeTarget "BuzzmoveMapTests" */;
+			buildPhases = (
+				27E254D51F06F2A100003CF9 /* Sources */,
+				27E254D61F06F2A100003CF9 /* Frameworks */,
+				27E254D71F06F2A100003CF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27E254DB1F06F2A100003CF9 /* PBXTargetDependency */,
+			);
+			name = BuzzmoveMapTests;
+			productName = BuzzmoveMapTests;
+			productReference = 27E254D91F06F2A100003CF9 /* BuzzmoveMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27E254BA1F06F2A100003CF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Surendra Kumar";
+				TargetAttributes = {
+					27E254C11F06F2A100003CF9 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					27E254D81F06F2A100003CF9 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 27E254C11F06F2A100003CF9;
+					};
+				};
+			};
+			buildConfigurationList = 27E254BD1F06F2A100003CF9 /* Build configuration list for PBXProject "BuzzmoveMap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27E254B91F06F2A100003CF9;
+			productRefGroup = 27E254C31F06F2A100003CF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27E254C11F06F2A100003CF9 /* BuzzmoveMap */,
+				27E254D81F06F2A100003CF9 /* BuzzmoveMapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27E254C01F06F2A100003CF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E254D31F06F2A100003CF9 /* LaunchScreen.storyboard in Resources */,
+				27E254D01F06F2A100003CF9 /* Assets.xcassets in Resources */,
+				27E254CB1F06F2A100003CF9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E254D71F06F2A100003CF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27E254BE1F06F2A100003CF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E254C81F06F2A100003CF9 /* ViewController.swift in Sources */,
+				27E254CE1F06F2A100003CF9 /* BuzzmoveMap.xcdatamodeld in Sources */,
+				27E254C61F06F2A100003CF9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27E254D51F06F2A100003CF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27E254DE1F06F2A100003CF9 /* BuzzmoveMapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27E254DB1F06F2A100003CF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27E254C11F06F2A100003CF9 /* BuzzmoveMap */;
+			targetProxy = 27E254DA1F06F2A100003CF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27E254C91F06F2A100003CF9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27E254CA1F06F2A100003CF9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27E254D11F06F2A100003CF9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27E254D21F06F2A100003CF9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27E254E01F06F2A100003CF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		27E254E11F06F2A100003CF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27E254E31F06F2A100003CF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BuzzmoveMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.surendra.buzzmove.BuzzmoveMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		27E254E41F06F2A100003CF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BuzzmoveMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.surendra.buzzmove.BuzzmoveMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		27E254E61F06F2A100003CF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BuzzmoveMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.surendra.buzzmove.BuzzmoveMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuzzmoveMap.app/BuzzmoveMap";
+			};
+			name = Debug;
+		};
+		27E254E71F06F2A100003CF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BuzzmoveMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.surendra.buzzmove.BuzzmoveMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuzzmoveMap.app/BuzzmoveMap";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27E254BD1F06F2A100003CF9 /* Build configuration list for PBXProject "BuzzmoveMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27E254E01F06F2A100003CF9 /* Debug */,
+				27E254E11F06F2A100003CF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27E254E21F06F2A100003CF9 /* Build configuration list for PBXNativeTarget "BuzzmoveMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27E254E31F06F2A100003CF9 /* Debug */,
+				27E254E41F06F2A100003CF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		27E254E51F06F2A100003CF9 /* Build configuration list for PBXNativeTarget "BuzzmoveMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27E254E61F06F2A100003CF9 /* Debug */,
+				27E254E71F06F2A100003CF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		27E254CC1F06F2A100003CF9 /* BuzzmoveMap.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				27E254CD1F06F2A100003CF9 /* BuzzmoveMap.xcdatamodel */,
+			);
+			currentVersion = 27E254CD1F06F2A100003CF9 /* BuzzmoveMap.xcdatamodel */;
+			path = BuzzmoveMap.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 27E254BA1F06F2A100003CF9 /* Project object */;
+}
