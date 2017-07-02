@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		270B60771F0702A9009DA887 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270B60761F0702A9009DA887 /* SearchService.swift */; };
+		270B60771F0702A9009DA887 /* PlaceSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270B60761F0702A9009DA887 /* PlaceSearchService.swift */; };
 		270B60791F07050D009DA887 /* GooglePlaceSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270B60781F07050D009DA887 /* GooglePlaceSearchService.swift */; };
 		27244CB01F072A0700DF52E6 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27244CAF1F072A0700DF52E6 /* PlaceViewModel.swift */; };
 		27244CB31F073CED00DF52E6 /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27244CB21F073CED00DF52E6 /* PlaceCell.swift */; };
@@ -42,7 +42,7 @@
 /* Begin PBXFileReference section */
 		0A3A0BFC1A38DF56B329B93F /* Pods-BuzzmoveMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuzzmoveMapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuzzmoveMapTests/Pods-BuzzmoveMapTests.release.xcconfig"; sourceTree = "<group>"; };
 		1AA4278139C0414E121D7C0F /* Pods_BuzzmoveMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuzzmoveMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		270B60761F0702A9009DA887 /* SearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
+		270B60761F0702A9009DA887 /* PlaceSearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceSearchService.swift; sourceTree = "<group>"; };
 		270B60781F07050D009DA887 /* GooglePlaceSearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlaceSearchService.swift; sourceTree = "<group>"; };
 		27244CAF1F072A0700DF52E6 /* PlaceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
 		27244CB21F073CED00DF52E6 /* PlaceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 		2789B03C1F06FE3E00AF9C46 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				270B60761F0702A9009DA887 /* SearchService.swift */,
+				270B60761F0702A9009DA887 /* PlaceSearchService.swift */,
 				270B60781F07050D009DA887 /* GooglePlaceSearchService.swift */,
 				277243A51F0921B8008074D0 /* PersistedDataService.swift */,
 				277243A71F09264B008074D0 /* CoreDataPersistedDataService.swift */,
@@ -430,7 +430,7 @@
 				277243A61F0921B8008074D0 /* PersistedDataService.swift in Sources */,
 				27E254F11F06F33F00003CF9 /* PlaceInformationViewController.swift in Sources */,
 				27ED07931F085598006F080E /* UIImageView+Extension.swift in Sources */,
-				270B60771F0702A9009DA887 /* SearchService.swift in Sources */,
+				270B60771F0702A9009DA887 /* PlaceSearchService.swift in Sources */,
 				27E254C61F06F2A100003CF9 /* AppDelegate.swift in Sources */,
 				27244CB01F072A0700DF52E6 /* PlaceViewModel.swift in Sources */,
 				27E254EF1F06F33F00003CF9 /* FindPlaceViewController.swift in Sources */,
