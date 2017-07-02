@@ -8,12 +8,16 @@
 
 import Foundation
 
+/**
+ GooglePlaceSearchService is a PlaceSearchService which uses Google place search api to search places and responsible
+ to parse json payload response from Google place search api
+ */
 class GooglePlaceSearchService: PlaceSearchService {
     
     typealias JSONDictionary = [String: Any]
     let defaultSession = URLSession(configuration: .default)
     var sessionDataTask: URLSessionDataTask?
-    var places: [PlaceViewModel] = []
+    var placeViewModels: [PlaceViewModel] = []
     var errorMessage = ""
     
     func getPlaceSearchResults(searchTerm: String, completion: @escaping PlaceSearchService.SearchResult) {
@@ -37,8 +41,8 @@ class GooglePlaceSearchService: PlaceSearchService {
                     //parse feed data on background thread
                     self.updateSearchResults(withData: data)
                     DispatchQueue.main.async {
-                        completion(self.places, self.errorMessage)
-                        self.places = []
+                        completion(self.placeViewModels, self.errorMessage)
+                        self.placeViewModels = []
                     }
                 }
             })
@@ -63,6 +67,7 @@ class GooglePlaceSearchService: PlaceSearchService {
         
         var index = 0
         for placeDictionary in array {
+                        
             if let placeDictionary = placeDictionary as? JSONDictionary,
                 let placeID = placeDictionary["place_id"] as? String,
                 let name = placeDictionary["name"] as? String,
@@ -70,17 +75,15 @@ class GooglePlaceSearchService: PlaceSearchService {
                 let geometry = placeDictionary["geometry"] as? JSONDictionary,
                 let location = geometry["location"] as? JSONDictionary,
                 let lat = location["lat"] as? Double,
-                let lng = location["lng"] as? Double {
+                let lng = location["lng"] as? Double,
+                let iconUrl = placeDictionary["icon"] as? String,
+                let photos = placeDictionary["photos"] as? [Any],
+                let photo = photos.first as? [String : Any],
+                let photoReference = photo["photo_reference"] as? String,
+                let photoWidth = photo["width"] as? Int16,
+                let photoHeight = photo["height"] as? Int16 {
                 
-                var photoReference: String?
-                var photoWidth: Int16?
-                var photoHeight: Int16?
-                if let photos = placeDictionary["photos"] as? [Any], let photo = photos.first as? [String : Any]  {
-                    photoReference = photo["photo_reference"] as? String
-                    photoWidth = photo["width"] as? Int16
-                    photoHeight = photo["height"] as? Int16
-                }
-                places.append(PlaceViewModel(name: name, placeId: placeID, location: (lat: lat, long: lng), address: address, iconUrl: placeDictionary["icon"] as? String, photoReference: photoReference, photoHeight: photoHeight, photoWidth: photoWidth))
+                self.placeViewModels.append(PlaceViewModel(name: name, placeId: placeID, location: (lat: lat, long: lng), address: address, iconUrl: iconUrl, photoReference: photoReference, photoHeight: photoHeight, photoWidth: photoWidth))
                 index += 1
             
             } else {

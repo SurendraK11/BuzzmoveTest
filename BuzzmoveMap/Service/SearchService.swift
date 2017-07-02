@@ -9,10 +9,20 @@
 import Foundation
 import UIKit
 
+/**
+ PlaceSearchService is responsible to provide places based on given search query
+ */
 protocol PlaceSearchService {
     
     typealias SearchResult = ([PlaceViewModel]?, String?) -> ()
     
+
+    ///
+    /// Allows to search places for given search tearm e.g. searchTerm = "Schools in london"
+    ///
+    /// - Parameters:
+    ///   - searchTerm: search query
+    ///   - completion: completion handler
     func getPlaceSearchResults(searchTerm: String, completion: @escaping SearchResult)
 
 }

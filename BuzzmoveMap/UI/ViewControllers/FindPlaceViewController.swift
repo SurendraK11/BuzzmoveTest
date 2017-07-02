@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 import MapKit
-import CoreData
 
 class FindPlaceViewController: UIViewController {
     
@@ -19,10 +18,12 @@ class FindPlaceViewController: UIViewController {
     var searchResults: [PlaceViewModel] = []
     
     let placeCellIdentifier = "PlaceCellIdentifier"
-    let placeSearchService : PlaceSearchService
+    let placeSearchService: PlaceSearchService
+    let persistedDataService: PersistedDataService
     
-    init(placeSearchService: PlaceSearchService) {
+    init(placeSearchService: PlaceSearchService, persistedDataService: PersistedDataService) {
         self.placeSearchService = placeSearchService
+        self.persistedDataService = persistedDataService
         super.init(nibName: "FindPlaceView", bundle: nil)
     }
     
@@ -47,77 +48,15 @@ class FindPlaceViewController: UIViewController {
         self.placeTableView.reloadData()
     }
     
-    //MARK: - Coredata operation
-    
     private func fetchData() {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        
-        let context = appDelegate.managedObjectContext
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Place")
-        do {
-            let places  = try context.fetch(fetchRequest)
-            var placeViewModelArray: [PlaceViewModel] = []
-            for place in places {
-                //Safe to force casting of place managed object
-                placeViewModelArray.append(PlaceViewModel(place: place as! Place))
-            }
-            self.searchResults = placeViewModelArray
-        } catch let error as NSError {
-            print("Could not fetch. \(error), \(error.userInfo)")
-        }
-
+        let places = self.persistedDataService.fetchAllRecordsFromPlaceEntity()
+        self.searchResults = places.map{PlaceViewModel(place: $0)}
     }
-    
     fileprivate func saveData() {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        self.deleteAllRecords()
-        let context = appDelegate.managedObjectContext
-        
-        for placeViewModel in self.searchResults {
-            let entity = NSEntityDescription.entity(forEntityName: "Place", in: context)!
-            let place = NSManagedObject(entity: entity, insertInto: context) as! Place
-            place.name = placeViewModel.name
-            place.address = placeViewModel.address
-            place.placeId = placeViewModel.placeId
-            place.lat = placeViewModel.coordinate.latitude
-            place.long = placeViewModel.coordinate.longitude
-            place.iconUrl = placeViewModel.iconUrl
-            place.photoReference = placeViewModel.photoReference
-            place.photoHeight = placeViewModel.photoHeight != nil ? placeViewModel.photoHeight! : 0
-            place.photoWidth = placeViewModel.photoWidth != nil ? placeViewModel.photoWidth! : 0
-            do {
-                try context.save()
-            } catch let error as NSError {
-                print("Could not save. \(error), \(error.userInfo)")
-            }
-
-        }
-        
+        self.persistedDataService.deleteAllRecordsFromPlaceEntity()
+        self.persistedDataService.createPlacesInPlaceEntity(usingPlaceViewModels: self.searchResults)
     }
     
-    private func deleteAllRecords()
-    {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        
-        let context = appDelegate.managedObjectContext
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Place")
-        do {
-            let places  = try context.fetch(fetchRequest)
-            for place in places {
-                context.delete(place as! NSManagedObject)
-            }
-            try context.save()
-        } catch let error as NSError {
-            print("Could not save. \(error), \(error.userInfo)")
-        }
-    }
-
 }
 
 // MARK: - search bar delegate

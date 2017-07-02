@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+ Place Cell is a custom table view cell, to show places
+ */
 class PlaceCell: UITableViewCell {
     
     @IBOutlet weak var name: UILabel!

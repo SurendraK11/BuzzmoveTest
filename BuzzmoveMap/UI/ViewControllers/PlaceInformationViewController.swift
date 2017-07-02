@@ -37,8 +37,6 @@ class PlaceInformationViewController: UIViewController {
         self.address.text = self.place.address
         self.address.sizeToFit()
         self.address.numberOfLines = 0
-        if let photoReference = self.place.photoReference, let width = self.place.photoWidth, let height = self.place.photoHeight {
-            self.placeImageView.imageFromServerURL(urlString: "https://maps.googleapis.com/maps/api/place/photo?maxwidth=\(width)&maxheight=\(height)&photoreference=\(photoReference)&key=\(apiKey)")
-        }
+        self.placeImageView.imageFromServerURL(urlString: "https://maps.googleapis.com/maps/api/place/photo?maxwidth=\(self.place.photoWidth)&maxheight=\(self.place.photoHeight)&photoreference=\(self.place.photoReference)&key=\(apiKey)")
     }
 }

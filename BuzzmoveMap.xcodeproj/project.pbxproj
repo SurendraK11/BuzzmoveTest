@@ -11,17 +11,22 @@
 		270B60791F07050D009DA887 /* GooglePlaceSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270B60781F07050D009DA887 /* GooglePlaceSearchService.swift */; };
 		27244CB01F072A0700DF52E6 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27244CAF1F072A0700DF52E6 /* PlaceViewModel.swift */; };
 		27244CB31F073CED00DF52E6 /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27244CB21F073CED00DF52E6 /* PlaceCell.swift */; };
+		277243A21F090A5F008074D0 /* PlaceViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277243A11F090A5F008074D0 /* PlaceViewModelSpec.swift */; };
+		277243A61F0921B8008074D0 /* PersistedDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277243A51F0921B8008074D0 /* PersistedDataService.swift */; };
+		277243A81F09264B008074D0 /* CoreDataPersistedDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277243A71F09264B008074D0 /* CoreDataPersistedDataService.swift */; };
+		277243AA1F0938B5008074D0 /* CoreDataPersistedDataServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277243A91F0938B5008074D0 /* CoreDataPersistedDataServiceSpec.swift */; };
 		27B4BE021F07E9F9009E7460 /* BuzzmoveMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27B4BE001F07E9F9009E7460 /* BuzzmoveMap.xcdatamodeld */; };
 		27DE047F1F0788040045C418 /* PlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27DE047E1F0788040045C418 /* PlaceCell.xib */; };
 		27E254C61F06F2A100003CF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E254C51F06F2A100003CF9 /* AppDelegate.swift */; };
 		27E254D01F06F2A100003CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27E254CF1F06F2A100003CF9 /* Assets.xcassets */; };
 		27E254D31F06F2A100003CF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27E254D11F06F2A100003CF9 /* LaunchScreen.storyboard */; };
-		27E254DE1F06F2A100003CF9 /* BuzzmoveMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E254DD1F06F2A100003CF9 /* BuzzmoveMapTests.swift */; };
 		27E254EE1F06F33F00003CF9 /* FindPlaceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27E254EA1F06F33F00003CF9 /* FindPlaceView.xib */; };
 		27E254EF1F06F33F00003CF9 /* FindPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E254EB1F06F33F00003CF9 /* FindPlaceViewController.swift */; };
 		27E254F01F06F33F00003CF9 /* PlaceInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27E254EC1F06F33F00003CF9 /* PlaceInformationView.xib */; };
 		27E254F11F06F33F00003CF9 /* PlaceInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E254ED1F06F33F00003CF9 /* PlaceInformationViewController.swift */; };
 		27ED07931F085598006F080E /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ED07921F085598006F080E /* UIImageView+Extension.swift */; };
+		DED5B708C89DB3E776D7F379 /* Pods_BuzzmoveMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D0BA664EA01C274A888752 /* Pods_BuzzmoveMapTests.framework */; };
+		F7769EE04AA7F1E3D7FFA2A4 /* Pods_BuzzmoveMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA4278139C0414E121D7C0F /* Pods_BuzzmoveMap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A3A0BFC1A38DF56B329B93F /* Pods-BuzzmoveMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuzzmoveMapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuzzmoveMapTests/Pods-BuzzmoveMapTests.release.xcconfig"; sourceTree = "<group>"; };
+		1AA4278139C0414E121D7C0F /* Pods_BuzzmoveMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuzzmoveMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		270B60761F0702A9009DA887 /* SearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		270B60781F07050D009DA887 /* GooglePlaceSearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlaceSearchService.swift; sourceTree = "<group>"; };
 		27244CAF1F072A0700DF52E6 /* PlaceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
 		27244CB21F073CED00DF52E6 /* PlaceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
+		277243A11F090A5F008074D0 /* PlaceViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceViewModelSpec.swift; sourceTree = "<group>"; };
+		277243A51F0921B8008074D0 /* PersistedDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistedDataService.swift; sourceTree = "<group>"; };
+		277243A71F09264B008074D0 /* CoreDataPersistedDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataPersistedDataService.swift; sourceTree = "<group>"; };
+		277243A91F0938B5008074D0 /* CoreDataPersistedDataServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataPersistedDataServiceSpec.swift; sourceTree = "<group>"; };
 		27B4BE011F07E9F9009E7460 /* BuzzmoveMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BuzzmoveMap.xcdatamodel; sourceTree = "<group>"; };
 		27DE047E1F0788040045C418 /* PlaceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceCell.xib; sourceTree = "<group>"; };
 		27E254C21F06F2A100003CF9 /* BuzzmoveMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuzzmoveMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,13 +58,16 @@
 		27E254D21F06F2A100003CF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27E254D41F06F2A100003CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27E254D91F06F2A100003CF9 /* BuzzmoveMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuzzmoveMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		27E254DD1F06F2A100003CF9 /* BuzzmoveMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuzzmoveMapTests.swift; sourceTree = "<group>"; };
 		27E254DF1F06F2A100003CF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27E254EA1F06F33F00003CF9 /* FindPlaceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindPlaceView.xib; sourceTree = "<group>"; };
 		27E254EB1F06F33F00003CF9 /* FindPlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindPlaceViewController.swift; sourceTree = "<group>"; };
 		27E254EC1F06F33F00003CF9 /* PlaceInformationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceInformationView.xib; sourceTree = "<group>"; };
 		27E254ED1F06F33F00003CF9 /* PlaceInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceInformationViewController.swift; sourceTree = "<group>"; };
 		27ED07921F085598006F080E /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		53D0BA664EA01C274A888752 /* Pods_BuzzmoveMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuzzmoveMapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E9CF912C3E8F04FF2648D55 /* Pods-BuzzmoveMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuzzmoveMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuzzmoveMap/Pods-BuzzmoveMap.release.xcconfig"; sourceTree = "<group>"; };
+		B196568F421ADF1F6286608B /* Pods-BuzzmoveMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuzzmoveMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuzzmoveMap/Pods-BuzzmoveMap.debug.xcconfig"; sourceTree = "<group>"; };
+		FEDE5A46A823E41FA4BC8F36 /* Pods-BuzzmoveMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuzzmoveMapTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BuzzmoveMapTests/Pods-BuzzmoveMapTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7769EE04AA7F1E3D7FFA2A4 /* Pods_BuzzmoveMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +83,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DED5B708C89DB3E776D7F379 /* Pods_BuzzmoveMapTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11CCA433B9D752D335DA7DA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AA4278139C0414E121D7C0F /* Pods_BuzzmoveMap.framework */,
+				53D0BA664EA01C274A888752 /* Pods_BuzzmoveMapTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		27244CAE1F07296400DF52E6 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,11 +116,24 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		274D61E96778EC615A8C228A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B196568F421ADF1F6286608B /* Pods-BuzzmoveMap.debug.xcconfig */,
+				9E9CF912C3E8F04FF2648D55 /* Pods-BuzzmoveMap.release.xcconfig */,
+				FEDE5A46A823E41FA4BC8F36 /* Pods-BuzzmoveMapTests.debug.xcconfig */,
+				0A3A0BFC1A38DF56B329B93F /* Pods-BuzzmoveMapTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2789B03C1F06FE3E00AF9C46 /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				270B60761F0702A9009DA887 /* SearchService.swift */,
 				270B60781F07050D009DA887 /* GooglePlaceSearchService.swift */,
+				277243A51F0921B8008074D0 /* PersistedDataService.swift */,
+				277243A71F09264B008074D0 /* CoreDataPersistedDataService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -114,6 +152,8 @@
 				27E254C41F06F2A100003CF9 /* BuzzmoveMap */,
 				27E254DC1F06F2A100003CF9 /* BuzzmoveMapTests */,
 				27E254C31F06F2A100003CF9 /* Products */,
+				274D61E96778EC615A8C228A /* Pods */,
+				11CCA433B9D752D335DA7DA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,8 +185,9 @@
 		27E254DC1F06F2A100003CF9 /* BuzzmoveMapTests */ = {
 			isa = PBXGroup;
 			children = (
-				27E254DD1F06F2A100003CF9 /* BuzzmoveMapTests.swift */,
 				27E254DF1F06F2A100003CF9 /* Info.plist */,
+				277243A11F090A5F008074D0 /* PlaceViewModelSpec.swift */,
+				277243A91F0938B5008074D0 /* CoreDataPersistedDataServiceSpec.swift */,
 			);
 			path = BuzzmoveMapTests;
 			sourceTree = "<group>";
@@ -186,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27E254E21F06F2A100003CF9 /* Build configuration list for PBXNativeTarget "BuzzmoveMap" */;
 			buildPhases = (
+				A11CAED34BF93E5ED3550541 /* 📦 Check Pods Manifest.lock */,
 				27E254BE1F06F2A100003CF9 /* Sources */,
 				27E254BF1F06F2A100003CF9 /* Frameworks */,
 				27E254C01F06F2A100003CF9 /* Resources */,
+				E0493E752C1CF77A70B35B66 /* 📦 Embed Pods Frameworks */,
+				7FB9356CD8BA388B61158A84 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27E254E51F06F2A100003CF9 /* Build configuration list for PBXNativeTarget "BuzzmoveMapTests" */;
 			buildPhases = (
+				21851212E357E243FF5D5EFA /* 📦 Check Pods Manifest.lock */,
 				27E254D51F06F2A100003CF9 /* Sources */,
 				27E254D61F06F2A100003CF9 /* Frameworks */,
 				27E254D71F06F2A100003CF9 /* Resources */,
+				9AB0D1A65DD97367A5D262FB /* 📦 Embed Pods Frameworks */,
+				02B6E198BC0E09450A8F56AA /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -280,6 +327,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02B6E198BC0E09450A8F56AA /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuzzmoveMapTests/Pods-BuzzmoveMapTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21851212E357E243FF5D5EFA /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7FB9356CD8BA388B61158A84 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuzzmoveMap/Pods-BuzzmoveMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AB0D1A65DD97367A5D262FB /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuzzmoveMapTests/Pods-BuzzmoveMapTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A11CAED34BF93E5ED3550541 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E0493E752C1CF77A70B35B66 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuzzmoveMap/Pods-BuzzmoveMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		27E254BE1F06F2A100003CF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -287,6 +427,7 @@
 			files = (
 				27B4BE021F07E9F9009E7460 /* BuzzmoveMap.xcdatamodeld in Sources */,
 				270B60791F07050D009DA887 /* GooglePlaceSearchService.swift in Sources */,
+				277243A61F0921B8008074D0 /* PersistedDataService.swift in Sources */,
 				27E254F11F06F33F00003CF9 /* PlaceInformationViewController.swift in Sources */,
 				27ED07931F085598006F080E /* UIImageView+Extension.swift in Sources */,
 				270B60771F0702A9009DA887 /* SearchService.swift in Sources */,
@@ -294,6 +435,7 @@
 				27244CB01F072A0700DF52E6 /* PlaceViewModel.swift in Sources */,
 				27E254EF1F06F33F00003CF9 /* FindPlaceViewController.swift in Sources */,
 				27244CB31F073CED00DF52E6 /* PlaceCell.swift in Sources */,
+				277243A81F09264B008074D0 /* CoreDataPersistedDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +443,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27E254DE1F06F2A100003CF9 /* BuzzmoveMapTests.swift in Sources */,
+				277243A21F090A5F008074D0 /* PlaceViewModelSpec.swift in Sources */,
+				277243AA1F0938B5008074D0 /* CoreDataPersistedDataServiceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +565,7 @@
 		};
 		27E254E31F06F2A100003CF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B196568F421ADF1F6286608B /* Pods-BuzzmoveMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -438,6 +582,7 @@
 		};
 		27E254E41F06F2A100003CF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E9CF912C3E8F04FF2648D55 /* Pods-BuzzmoveMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -454,6 +599,7 @@
 		};
 		27E254E61F06F2A100003CF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEDE5A46A823E41FA4BC8F36 /* Pods-BuzzmoveMapTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +614,7 @@
 		};
 		27E254E71F06F2A100003CF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A3A0BFC1A38DF56B329B93F /* Pods-BuzzmoveMapTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
