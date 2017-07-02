@@ -1,0 +1,6 @@
+framework module Pods_BuzzmoveMapTests {
+  umbrella header "Pods-BuzzmoveMapTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
