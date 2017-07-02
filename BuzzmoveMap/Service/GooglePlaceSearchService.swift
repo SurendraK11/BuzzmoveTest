@@ -65,9 +65,7 @@ class GooglePlaceSearchService: PlaceSearchService {
             return
         }
         
-        var index = 0
         for placeDictionary in array {
-                        
             if let placeDictionary = placeDictionary as? JSONDictionary,
                 let placeID = placeDictionary["place_id"] as? String,
                 let name = placeDictionary["name"] as? String,
@@ -84,7 +82,6 @@ class GooglePlaceSearchService: PlaceSearchService {
                 let photoHeight = photo["height"] as? Int16 {
                 
                 self.placeViewModels.append(PlaceViewModel(name: name, placeId: placeID, location: (lat: lat, long: lng), address: address, iconUrl: iconUrl, photoReference: photoReference, photoHeight: photoHeight, photoWidth: photoWidth))
-                index += 1
             
             } else {
                 self.errorMessage += "Problem parsing trackDictionary\n"
