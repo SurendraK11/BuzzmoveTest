@@ -21,6 +21,7 @@
 		27E254EF1F06F33F00003CF9 /* FindPlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E254EB1F06F33F00003CF9 /* FindPlaceViewController.swift */; };
 		27E254F01F06F33F00003CF9 /* PlaceInformationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27E254EC1F06F33F00003CF9 /* PlaceInformationView.xib */; };
 		27E254F11F06F33F00003CF9 /* PlaceInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E254ED1F06F33F00003CF9 /* PlaceInformationViewController.swift */; };
+		27ED07931F085598006F080E /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ED07921F085598006F080E /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		27E254EB1F06F33F00003CF9 /* FindPlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindPlaceViewController.swift; sourceTree = "<group>"; };
 		27E254EC1F06F33F00003CF9 /* PlaceInformationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceInformationView.xib; sourceTree = "<group>"; };
 		27E254ED1F06F33F00003CF9 /* PlaceInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceInformationViewController.swift; sourceTree = "<group>"; };
+		27ED07921F085598006F080E /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		27E254C41F06F2A100003CF9 /* BuzzmoveMap */ = {
 			isa = PBXGroup;
 			children = (
+				27ED07911F084C09006F080E /* Utility */,
 				2798B55E1F07D1D700F6F025 /* DataModel */,
 				27244CAE1F07296400DF52E6 /* ViewModel */,
 				2789B03C1F06FE3E00AF9C46 /* Service */,
@@ -166,6 +169,14 @@
 				27E254ED1F06F33F00003CF9 /* PlaceInformationViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		27ED07911F084C09006F080E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				27ED07921F085598006F080E /* UIImageView+Extension.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +229,7 @@
 				TargetAttributes = {
 					27E254C11F06F2A100003CF9 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 239264S86B;
 						ProvisioningStyle = Automatic;
 					};
 					27E254D81F06F2A100003CF9 = {
@@ -276,6 +288,7 @@
 				27B4BE021F07E9F9009E7460 /* BuzzmoveMap.xcdatamodeld in Sources */,
 				270B60791F07050D009DA887 /* GooglePlaceSearchService.swift in Sources */,
 				27E254F11F06F33F00003CF9 /* PlaceInformationViewController.swift in Sources */,
+				27ED07931F085598006F080E /* UIImageView+Extension.swift in Sources */,
 				270B60771F0702A9009DA887 /* SearchService.swift in Sources */,
 				27E254C61F06F2A100003CF9 /* AppDelegate.swift in Sources */,
 				27244CB01F072A0700DF52E6 /* PlaceViewModel.swift in Sources */,
@@ -412,7 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 239264S86B;
 				INFOPLIST_FILE = BuzzmoveMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -428,7 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 239264S86B;
 				INFOPLIST_FILE = BuzzmoveMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

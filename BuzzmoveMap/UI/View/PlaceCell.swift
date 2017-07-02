@@ -12,14 +12,18 @@ class PlaceCell: UITableViewCell {
     
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var address: UILabel!
+    @IBOutlet weak var iconImageView: UIImageView!
     
-    func configureCell(name: String, address: String)  {
+    func configureCell(name: String, address: String, iconUrl: String?)  {
         self.name.text = name
         self.address.text = address
+        self.iconImageView.imageFromServerURL(urlString: iconUrl)
+    
     }
     
     override func prepareForReuse() {
         self.name.text = ""
         self.address.text = ""
+        self.iconImageView.image = nil
     }
 }

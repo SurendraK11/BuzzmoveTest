@@ -79,12 +79,16 @@ class FindPlaceViewController: UIViewController {
         
         for placeViewModel in self.searchResults {
             let entity = NSEntityDescription.entity(forEntityName: "Place", in: context)!
-            let place = NSManagedObject(entity: entity, insertInto: context)
-            place.setValue(placeViewModel.name, forKeyPath: "name")
-            place.setValue(placeViewModel.address, forKeyPath: "address")
-            place.setValue(placeViewModel.placeId, forKeyPath: "placeId")
-            place.setValue(placeViewModel.coordinate.latitude, forKeyPath: "lat")
-            place.setValue(placeViewModel.coordinate.longitude, forKeyPath: "log")
+            let place = NSManagedObject(entity: entity, insertInto: context) as! Place
+            place.name = placeViewModel.name
+            place.address = placeViewModel.address
+            place.placeId = placeViewModel.placeId
+            place.lat = placeViewModel.coordinate.latitude
+            place.long = placeViewModel.coordinate.longitude
+            place.iconUrl = placeViewModel.iconUrl
+            place.photoReference = placeViewModel.photoReference
+            place.photoHeight = placeViewModel.photoHeight != nil ? placeViewModel.photoHeight! : 0
+            place.photoWidth = placeViewModel.photoWidth != nil ? placeViewModel.photoWidth! : 0
             do {
                 try context.save()
             } catch let error as NSError {
@@ -142,7 +146,7 @@ extension FindPlaceViewController: UISearchBarDelegate {
 // MARK: - table view delegate and datasource
 
 extension FindPlaceViewController: UITableViewDataSource, UITableViewDelegate {
-    
+ 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.searchResults.count
     }
@@ -151,7 +155,7 @@ extension FindPlaceViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.placeCellIdentifier, for:  indexPath)
         if let placeCell = cell as? PlaceCell {
             let place = self.searchResults[indexPath.row]
-            placeCell.configureCell(name: place.name, address: place.address)
+            placeCell.configureCell(name: place.name, address: place.address, iconUrl: place.iconUrl)
         }
         return cell
     }

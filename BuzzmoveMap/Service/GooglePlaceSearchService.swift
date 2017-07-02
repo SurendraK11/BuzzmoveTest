@@ -13,7 +13,6 @@ class GooglePlaceSearchService: PlaceSearchService {
     typealias JSONDictionary = [String: Any]
     let defaultSession = URLSession(configuration: .default)
     var sessionDataTask: URLSessionDataTask?
-    let apiKey = "AIzaSyClTrd2wCY0La4Zwmy_nS7KOsFsdkfeacc"
     var places: [PlaceViewModel] = []
     var errorMessage = ""
     
@@ -72,7 +71,16 @@ class GooglePlaceSearchService: PlaceSearchService {
                 let location = geometry["location"] as? JSONDictionary,
                 let lat = location["lat"] as? Double,
                 let lng = location["lng"] as? Double {
-                places.append(PlaceViewModel(name: name, placeId: placeID, location: (lat: lat, lag: lng), address: address))
+                
+                var photoReference: String?
+                var photoWidth: Int16?
+                var photoHeight: Int16?
+                if let photos = placeDictionary["photos"] as? [Any], let photo = photos.first as? [String : Any]  {
+                    photoReference = photo["photo_reference"] as? String
+                    photoWidth = photo["width"] as? Int16
+                    photoHeight = photo["height"] as? Int16
+                }
+                places.append(PlaceViewModel(name: name, placeId: placeID, location: (lat: lat, long: lng), address: address, iconUrl: placeDictionary["icon"] as? String, photoReference: photoReference, photoHeight: photoHeight, photoWidth: photoWidth))
                 index += 1
             
             } else {
